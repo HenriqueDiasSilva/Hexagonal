@@ -1,13 +1,15 @@
 package hexagonal.viagens.porta.saida;
 
+import java.util.List;
+
 import hexagonal.viagens.dominio.Reserva;
 
 public interface ReservaVooPortaDeSaida {
-    void connect(String banco);
+    void conectar(String banco);
 
     void salvarReserva(Reserva reserva);
 
-    // void findAll();
+    List<Reserva> procurarTodos();
 
-    // void Delete(Reserva reserva);
+    void deletarReserva(int id);
 }

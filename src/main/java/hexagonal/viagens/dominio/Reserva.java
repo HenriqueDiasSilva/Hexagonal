@@ -1,28 +1,26 @@
 package hexagonal.viagens.dominio;
 
-import java.util.Date;
-
 public class Reserva {
-    private Long id;
+    private int id;
     private String codigoVoo;
     private String classeAssento;
-    private Date dataPartida;
+    private String dataPartida;
 
     public Reserva() {
     }
 
-    public Reserva(Long id, String codigoVoo, String classeAssento, Date dataPartida) {
+    public Reserva(int id, String codigoVoo, String classeAssento, String dataPartida) {
         this.id = id;
         this.codigoVoo = codigoVoo;
         this.classeAssento = classeAssento;
         this.dataPartida = dataPartida;
     }
 
-    public Long getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(int id) {
         this.id = id;
     }
 
@@ -42,11 +40,11 @@ public class Reserva {
         this.classeAssento = classeAssento;
     }
 
-    public Date getDataPartida() {
+    public String getDataPartida() {
         return dataPartida;
     }
 
-    public void setDataPartida(Date dataPartida) {
+    public void setDataPartida(String dataPartida) {
         this.dataPartida = dataPartida;
     }
 }
